@@ -1,7 +1,7 @@
 import * as Dialog from '@radix-ui/react-dialog'
 import { formatDistanceToNow } from 'date-fns'
 import { ptBR } from 'date-fns/locale'
-import { X } from 'lucide-react'
+import { Trash, Trash2, X } from 'lucide-react'
 
 interface NoteCardProps {
   note: {
@@ -53,14 +53,10 @@ export function NoteCard({
 
           <button
             type="button"
-            className="group w-full bg-slate-800 py-4 text-center text-sm text-slate-300 outline-none font-medium"
+            className="flex justify-center items-center w-full bg-red-500 hover:bg-red-600 py-4 text-sm text-slate-300 outline-none font-medium"
             onClick={handleDeleteNote}
           >
-            Deseja{' '}
-            <span className="text-red-400 group-hover:underline">
-              apagar essa nota
-            </span>
-            ?
+            <Trash2 className="size-6" />
           </button>
         </Dialog.Content>
       </Dialog.Portal>
