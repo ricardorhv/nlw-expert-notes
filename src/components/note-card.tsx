@@ -5,12 +5,21 @@ import { X } from 'lucide-react'
 
 interface NoteCardProps {
   note: {
+    id: string
     date: Date
     content: string
   }
+  onNoteDeleted: (id: string) => void
 }
 
-export function NoteCard({ note: { content, date } }: NoteCardProps) {
+export function NoteCard({
+  note: { id, content, date },
+  onNoteDeleted,
+}: NoteCardProps) {
+  function handleDeleteNote() {
+    onNoteDeleted(id)
+  }
+
   return (
     <Dialog.Root>
       <Dialog.Trigger className="flex flex-col text-left rounded-md bg-slate-800 p-5 gap-3 overflow-hidden relative hover:outline hover:outline-2 hover:outline-slate-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-lime-400">
@@ -45,6 +54,7 @@ export function NoteCard({ note: { content, date } }: NoteCardProps) {
           <button
             type="button"
             className="group w-full bg-slate-800 py-4 text-center text-sm text-slate-300 outline-none font-medium"
+            onClick={handleDeleteNote}
           >
             Deseja{' '}
             <span className="text-red-400 group-hover:underline">
