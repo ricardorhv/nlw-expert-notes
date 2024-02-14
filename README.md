@@ -4,39 +4,46 @@
 
 <hr>
 
-<h1 align="center"> ⚠ In development ⚠ </h1>
-
 ## Notes website to save important thinks
 
 <img src="./.github/cover.png">
 
 ---
 
-<!-- ## 🎥 Preview
+## 🎥 Preview
 
-### A little about the project 💻
+### Add a new note by text ✏️
 
-<img src='./github/tour.gif'/>
-
-<br>
-
----
-
-## 🚀 I went beyond the challenge
-I did more than was requested to me
+<img src='./.github/preview/add-new-note-by-text.gif'/>
 
 <br>
 
-- ✔️ I did `something`
+### Add a new note by audio 🎤
+
+<img src='./.github/preview/add-new-note-by-audio.gif'/>
+
+<br>
+
+### Filter notes 🔎
+
+<img src='./.github/preview/filter-notes.gif'/>
+
+<br>
+
+### Responsive 📱
+
+<img src='./.github/preview/responsive.gif'/>
 
 <br>
 
 ---
 
 ## 📚 Learning
+
 All the things that I learned and practiced with this project
 
-- I learn `something` to do something
+- I learned about `the speech recognition API` to record audio and transcript it
+- I learned more about `how create responsive application with tailwindCSS`
 
 <br>
 
@@ -46,12 +53,17 @@ All the things that I learned and practiced with this project
 
 This project was developed using de following technologies:
 
-- [Tech](link)
-- [Tech](link)
+- [React](https://react.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Radix](https://www.radix-ui.com/)
+- [Date fns](https://date-fns.org/)
+- [Lucide Icons](https://lucide.dev/)
+- [Sonner](https://sonner.emilkowal.ski/)
+- [TailwindCSS](https://tailwindcss.com/)
 
 <br>
 
---- -->
+---
 
 ## 🔖 Layout
 
@@ -65,4 +77,4 @@ Remembering that you need to have a [Figma](http://figma.com/) account to access
 
 ---
 
-Developed by [ricardorhv](https://github.com/ricardorhv) 👋
+Developed by [ricardorhv](https://github.com/ricardorhv) 🖤
